@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+
+    <div class="container">
+        <div class="panel panel-default" style="background-color: #CCC">
+                <div class="panel-heading">
+                        <div class="col-md-14 text-center">Customer Creation</div>
+                                          
+                       <div class="clearfix"></div>
+                   </div>
+            
+            <div class="panel-body">
+                    
+                
+                <form id="form1" name="form1" method="post" action="" class="form-horizontal"><!-- START THE FORM -->
+                    
+                    
+                    <div class="col-sm-6"> <!-- FIRST COLUMN -->
+                        <legend>Billing</legend>
+                        <label><input type="hidden" id="same_as_billing_hidden" /> </label>
+                        <div class="form-group">
+                            <label for="customer_name_bill" class="col-sm-3 control-label">Name</label>
+                            <div class="col-sm-8">
+                            <input type="text" class="form-control" id="customer_name_bill" placeholder="Name">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="address_bill" class="col-sm-3 control-label">Address</label>
+                            <div class="col-sm-8">
+                            <input type="text" class="form-control" id="address_bill" placeholder="Address">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="lanno_bill" class="col-sm-3 control-label">Lan No</label>
+                            <div class="col-sm-8">
+                            <input type="text" class="form-control" id="lanno_bill" placeholder="Lan No">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="mobileno_bill" class="col-sm-3 control-label">Mobile No</label>
+                            <div class="col-sm-8">
+                            <input type="text" class="form-control" id="mobileno_bill" placeholder="Mobile No">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email_bill" class="col-sm-3 control-label">Email</label>
+                            <div class="col-sm-8">
+                            <input type="text" class="form-control" id="email_bill" placeholder="Email">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="website_bill" class="col-sm-3 control-label">Website</label>
+                            <div class="col-sm-8">
+                            <input type="text" class="form-control" id="website_bill" placeholder="Website">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="gstn_uin_bill" class="col-sm-3 control-label">GSTN_UIN</label>
+                            <div class="col-sm-8">
+                            <input type="text" class="form-control" id="gstn_uin_bill" placeholder="GSTN_UIN">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="cin_bill" class="col-sm-3 control-label">CIN</label>
+                            <div class="col-sm-8">
+                            <input type="text" class="form-control" id="cin_bill" placeholder="CIN">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="state_code_bill" class="col-sm-3 control-label">State Code</label>
+                            <div class="col-sm-8">
+                            <input type="text" class="form-control" id="state_code_bill" placeholder="State Code">
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <div class="col-sm-6"> <!-- SECOND COLUMN -->
+                        
+                        <legend>Shipping</legend>
+                        <label><input type="checkbox" id="same_as_billing" /> Same as billing</label>
+                    
+                        <div class="form-group">
+                            <label for="customer_name_ship" class="col-sm-4 control-label">Name</label>
+                            <div class="col-sm-8">
+                            <input type="text" class="form-control" id="customer_name_ship" placeholder="Name">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="address_ship" class="col-sm-4 control-label">Address</label>
+                            <div class="col-sm-8">
+                            <input type="text" class="form-control" id="address_ship" placeholder="Address">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="lanno_ship" class="col-sm-4 control-label">Lan No</label>
+                            <div class="col-sm-8">
+                            <input type="text" class="form-control" id="lanno_ship" placeholder="Lan No">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="mobileno_ship" class="col-sm-4 control-label">Mobile No</label>
+                            <div class="col-sm-8">
+                            <input type="text" class="form-control" id="mobileno_ship" placeholder="Mobile No">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email_ship" class="col-sm-4 control-label">Email</label>
+                            <div class="col-sm-8">
+                            <input type="text" class="form-control" id="email_ship" placeholder="Email">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="website_ship" class="col-sm-4 control-label">Website</label>
+                            <div class="col-sm-8">
+                            <input type="text" class="form-control" id="website_ship" placeholder="Website">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="gstn_uin_ship" class="col-sm-4 control-label">GSTN_UIN</label>
+                            <div class="col-sm-8">
+                            <input type="text" class="form-control" id="gstn_uin_ship" placeholder="GSTN_UIN">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="cin_ship" class="col-sm-4 control-label">CIN</label>
+                            <div class="col-sm-8">
+                            <input type="text" class="form-control" id="cin_ship" placeholder="CIN">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="state_code_ship" class="col-sm-4 control-label">State Code</label>
+                            <div class="col-sm-8">
+                            <input type="text" class="form-control" id="state_code_ship" placeholder="State Code">
+                            </div>
+                        </div>
+                    </div>
+            </form> <!-- END THE FORM -->
+            </div>
+        </div><!-- END PANEL -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+<script>
+  $("#same_as_billing").on("change", function(){
+    if (this.checked) {
+      $('#customer_name_ship').val($('#customer_name_bill').val());
+      $('#address_ship').val($('#address_bill').val());
+      $('#lanno_ship').val($('#lanno_bill').val());
+      $('#mobileno_ship').val($('#mobileno_bill').val());
+      $('#email_ship').val($('#email_bill').val());
+      $('#website_ship').val($('#website_bill').val());
+      $('#gstn_uin_ship').val($('#gstn_uin_bill').val());
+      $('#cin_ship').val($('#cin_bill').val());
+      $('#state_code_ship').val($('#state_code_bill').val());
+
+
+
+      
+    }
+  });
+</script>
+    </div>
+
+</body>
+</html>
